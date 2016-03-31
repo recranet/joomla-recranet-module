@@ -12,7 +12,10 @@ defined('_JEXEC') or die;
 $recranetConfig = array(
     'accommodationsView' => $params->get('accommodationsView'),
     'organization' => $params->get('organization'),
-    'category' => $params->get('category')
+    'category' => $params->get('category'),
+    'breakpointSmall' => $params->get('breakpointSmall'),
+    'breakpointMedium' => $params->get('breakpointMedium'),
+    'breakpointLarge' => $params->get('breakpointLarge')
 );
 
 require JModuleHelper::getLayoutPath('mod_recranet', $params->get('layout', 'default'));

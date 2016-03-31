@@ -4,38 +4,58 @@
     <author>Recranet</author>
     <version>1.0.0</version>
     <description>Recranet widget voor online boekingen</description>
-	<files>
+    <files>
         <filename>mod_recranet.xml</filename>
         <filename module="mod_recranet">mod_recranet.php</filename>
         <filename>index.html</filename>
         <filename>tmpl/default.php</filename>
         <filename>tmpl/index.html</filename>
-	</files>
-	<config>
+    </files>
+    <config>
         <fields name="params">
-			<fieldset name="basic">
+            <fieldset name="basic">
                 <field
-					name="organization"
-					type="number"
-					default=""
-					label="Organisatie ID"
-					description="" />
-				<field
-					name="category"
-					type="number"
-					default=""
-					label="Categorie ID"
-					description="" />
+                    name="organization"
+                    type="number"
+                    default=""
+                    label="Organisatie ID"
+                    description="" />
                 <field
-					name="accommodationsView"
-					type="list"
-					default="list"
-					label="Accommodatie weergave"
-					description="">
+                    name="category"
+                    type="number"
+                    default=""
+                    label="Categorie ID"
+                    description="" />
+                <field
+                    name="accommodationsView"
+                    type="list"
+                    default="list"
+                    label="Accommodatie weergave"
+                    description="">
                     <option value="list">Lijstweergave</option>
                     <option value="grid">Rasterweergave</option>
                 </field>
             </fieldset>
+            <fieldset name="advanced">
+                <field
+                    name="breakpointSmall"
+                    type="number"
+                    default="720"
+                    label="Breakpoint (small)"
+                    description="" />
+                <field
+                    name="breakpointMedium"
+                    type="number"
+                    default="940"
+                    label="Breakpoint (medium)"
+                    description="" />
+                <field
+                    name="breakpointLarge"
+                    type="number"
+                    default="1140"
+                    label="Breakpoint (large)"
+                    description="" />
+            </fieldset>
         </fields>
-	</config>
+    </config>
 </extension>

@@ -1,4 +1,4 @@
-<div id="recranet-container" data-eq-pts="small: 720, medium: 940, large: 1140">
+<div id="recranet-container" data-eq-pts="small: <?php echo $params->get('breakpointSmall'); ?>, medium: <?php echo $params->get('breakpointMedium'); ?>, large: <?php echo $params->get('breakpointLarge'); ?>">
     <ng-view autoscroll="true"></ng-view>
 </div>
 
