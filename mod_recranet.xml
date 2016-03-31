@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+    <name>Recranet</name>
+    <author>Recranet</author>
+    <version>1.0.0</version>
+    <description>Recranet widget voor online boekingen</description>
+	<files>
+        <filename>mod_recranet.xml</filename>
+        <filename module="mod_recranet">mod_recranet.php</filename>
+        <filename>index.html</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+	</files>
+	<config>
+        <fields name="params">
+			<fieldset name="basic">
+                <field
+					name="organization"
+					type="number"
+					default=""
+					label="Organisatie ID"
+					description="" />
+				<field
+					name="category"
+					type="number"
+					default=""
+					label="Categorie ID"
+					description="" />
+                <field
+					name="accommodationsView"
+					type="list"
+					default="list"
+					label="Accommodatie weergave"
+					description="">
+                    <option value="list">Lijstweergave</option>
+                    <option value="grid">Rasterweergave</option>
+                </field>
+            </fieldset>
+        </fields>
+	</config>
+</extension>
