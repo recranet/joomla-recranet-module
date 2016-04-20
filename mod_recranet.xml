@@ -2,7 +2,7 @@
 <extension type="module" version="3.1" client="site" method="upgrade">
     <name>Recranet</name>
     <author>Recranet</author>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
     <description>Recranet widget voor online boekingen</description>
     <files>
         <filename>mod_recranet.xml</filename>
@@ -15,16 +15,20 @@
         <fields name="params">
             <fieldset name="basic">
                 <field
+                    name="locale"
+                    type="list"
+                    default="nl"
+                    label="Taal"
+                    description="">
+                    <option value="nl">Nederlands</option>
+                    <option value="de">Deutsch</option>
+                    <option value="en">English</option>
+                </field>
+                <field
                     name="organization"
                     type="number"
                     default=""
                     label="Organisatie ID"
-                    description="" />
-                <field
-                    name="category"
-                    type="number"
-                    default=""
-                    label="Categorie ID"
                     description="" />
                 <field
                     name="accommodationsView"
@@ -35,6 +39,12 @@
                     <option value="list">Lijstweergave</option>
                     <option value="grid">Rasterweergave</option>
                 </field>
+                <field
+                    name="category"
+                    type="number"
+                    default=""
+                    label="Categorie ID"
+                    description="" />
             </fieldset>
             <fieldset name="advanced">
                 <field

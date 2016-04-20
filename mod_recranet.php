@@ -10,8 +10,9 @@
 defined('_JEXEC') or die;
 
 $recranetConfig = array(
-    'accommodationsView' => $params->get('accommodationsView'),
+    'locale' => $params->get('locale'),
     'organization' => $params->get('organization'),
+    'accommodationsView' => $params->get('accommodationsView'),
     'category' => $params->get('category'),
     'breakpointSmall' => $params->get('breakpointSmall'),
     'breakpointMedium' => $params->get('breakpointMedium'),
