@@ -31,6 +31,15 @@
                     label="Organisatie ID"
                     description="" />
                 <field
+                    name="view"
+                    type="list"
+                    default="list"
+                    label="Weergave"
+                    description="">
+                    <option value="default">Accommodaties</option>
+                    <option value="search-form">Zoek en boek</option>
+                </field>
+                <field
                     name="accommodationsView"
                     type="list"
                     default="list"
@@ -44,6 +53,12 @@
                     type="number"
                     default=""
                     label="Categorie ID"
+                    description="" />
+                <field
+                    name="sdk"
+                    type="checkbox"
+                    default=""
+                    label="Laad de Recranet SDK"
                     description="" />
             </fieldset>
             <fieldset name="advanced">
