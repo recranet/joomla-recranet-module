@@ -10,13 +10,11 @@
 defined('_JEXEC') or die;
 
 $recranetConfig = array(
-    'locale' => $params->get('locale'),
-    'organization' => $params->get('organization'),
-    'accommodationsView' => $params->get('accommodationsView'),
-    'category' => $params->get('category'),
-    'breakpointSmall' => $params->get('breakpointSmall'),
-    'breakpointMedium' => $params->get('breakpointMedium'),
-    'breakpointLarge' => $params->get('breakpointLarge')
+    'accommodationsView' => (string) $params->get('accommodationsView'),
+    'category' => (int) $params->get('category'),
+    'html5Mode' => (boolean) $params->get('html5Mode'),
+    'locale' => (string) $params->get('locale'),
+    'organization' => (int) $params->get('organization')
 );
 
 require JModuleHelper::getLayoutPath('mod_recranet', $params->get('layout', 'default'));

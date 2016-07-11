@@ -1,5 +1,5 @@
-<div id="recranet<?php echo ($params->get('view') !== 'default' ? '-' . $params->get('view') : ''); ?>-container" data-eq-pts="small: <?php echo $params->get('breakpointSmall'); ?>, medium: <?php echo $params->get('breakpointMedium'); ?>, large: <?php echo $params->get('breakpointLarge'); ?>">
-    <ng-view autoscroll="true"></ng-view>
+<div id="recranet-container" data-eq-pts="small: <?php echo $params->get('breakpointSmall'); ?>, medium: <?php echo $params->get('breakpointMedium'); ?>, large: <?php echo $params->get('breakpointLarge'); ?>">
+    <?php echo '<recranet-' . $params->get('view') . '></recranet-' . $params->get('view') . '>'; ?>
 </div>
 
 <?php if ($params->get('sdk')) : ?>

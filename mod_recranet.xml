@@ -36,7 +36,8 @@
                     default="list"
                     label="Weergave"
                     description="">
-                    <option value="default">Accommodaties</option>
+                    <option value="accommodations">Accommodaties</option>
+                    <option value="packages">Arrangementen</option>
                     <option value="search-form">Zoek en boek</option>
                 </field>
                 <field
@@ -57,8 +58,14 @@
                 <field
                     name="sdk"
                     type="checkbox"
-                    default=""
+                    default="1"
                     label="Laad de Recranet SDK"
+                    description="" />
+                <field
+                    name="html5Mode"
+                    type="checkbox"
+                    default="0"
+                    label="HTML5 routing mode (Let op: mod_rewrite regels zijn noodzakelijk)"
                     description="" />
             </fieldset>
             <fieldset name="advanced">
