@@ -1,5 +1,14 @@
 <div class="recranet-container" data-eq-pts="small: <?php echo $params->get('breakpointSmall'); ?>, medium: <?php echo $params->get('breakpointMedium'); ?>, large: <?php echo $params->get('breakpointLarge'); ?>">
-    <?php echo '<recranet-' . $params->get('view') . '></recranet-' . $params->get('view') . '>'; ?>
+    <?php
+        echo '<recranet-' . $params->get('view');
+
+        if ($params->get('searchFormAction')) {
+            echo ' action="' . $params->get('searchFormAction') . '"';
+        }
+
+        echo '>';
+        echo '</recranet-' . $params->get('view') . '>';
+    ?>
 </div>
 
 <?php if ($params->get('sdk')) : ?>

@@ -2,7 +2,7 @@
 <extension type="module" version="3.1" client="site" method="upgrade">
     <name>Recranet</name>
     <author>Recranet</author>
-    <version>1.1.0</version>
+    <version>1.2.0</version>
     <description>Recranet widget voor online boekingen</description>
     <files>
         <filename>mod_recranet.xml</filename>
@@ -54,6 +54,12 @@
                     type="number"
                     default=""
                     label="Categorie ID"
+                    description="" />
+                <field
+                    name="searchFormAction"
+                    type="text"
+                    default=""
+                    label="Zoek en boek formulier verwijzing"
                     description="" />
                 <field
                     name="sdk"
