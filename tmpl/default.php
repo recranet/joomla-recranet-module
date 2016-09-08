@@ -2,8 +2,8 @@
     <?php
         echo '<recranet-' . $params->get('view');
 
-        if ($params->get('searchFormAction')) {
-            echo ' action="' . $params->get('searchFormAction') . '"';
+        if ($params->get('action')) {
+            echo ' action="' . $params->get('action') . '"';
         }
 
         echo '>';

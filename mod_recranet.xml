@@ -2,8 +2,8 @@
 <extension type="module" version="3.1" client="site" method="upgrade">
     <name>Recranet</name>
     <author>Recranet</author>
-    <version>1.2.0</version>
-    <description>Recranet widget voor online boekingen</description>
+    <version>1.3.0</version>
+    <description>Recranet module voor online boekingen. Heeft u vragen mail dan naar support@recranet.com.</description>
     <files>
         <filename>mod_recranet.xml</filename>
         <filename module="mod_recranet">mod_recranet.php</filename>
@@ -25,12 +25,6 @@
                     <option value="en">English</option>
                 </field>
                 <field
-                    name="organization"
-                    type="number"
-                    default=""
-                    label="Organisatie ID"
-                    description="" />
-                <field
                     name="view"
                     type="list"
                     default="list"
@@ -38,17 +32,24 @@
                     description="">
                     <option value="accommodations">Accommodaties</option>
                     <option value="packages">Arrangementen</option>
+                    <option value="accommodation-reservation-form">Accommodatie reserveringsformulier</option>
                     <option value="search-form">Zoek en boek</option>
                 </field>
                 <field
                     name="accommodationsView"
                     type="list"
                     default="list"
-                    label="Accommodatie weergave"
+                    label="Accommodaties overzicht"
                     description="">
                     <option value="list">Lijstweergave</option>
                     <option value="grid">Rasterweergave</option>
                 </field>
+                <field
+                    name="organization"
+                    type="number"
+                    default=""
+                    label="Organisatie ID"
+                    description="" />
                 <field
                     name="category"
                     type="number"
@@ -56,10 +57,16 @@
                     label="Categorie ID"
                     description="" />
                 <field
-                    name="searchFormAction"
+                    name="accommodation"
+                    type="number"
+                    default=""
+                    label="Accommodatie ID"
+                    description="" />
+                <field
+                    name="action"
                     type="text"
                     default=""
-                    label="Zoek en boek formulier verwijzing"
+                    label="Formulieren URL"
                     description="" />
                 <field
                     name="sdk"
