@@ -69,6 +69,12 @@
                     label="Formulieren URL"
                     description="" />
                 <field
+                    name="jquery"
+                    type="checkbox"
+                    default="0"
+                    label="Laad jQuery in"
+                    description="" />
+                <field
                     name="sdk"
                     type="checkbox"
                     default="1"
@@ -80,6 +86,12 @@
                     default="0"
                     label="HTML5 routing mode (Let op: mod_rewrite regels zijn noodzakelijk)"
                     description="" />
+                <field
+                    name="enable_initializer"
+                    type="checkbox"
+                    default="0"
+                    label="Toon een laadeffect"
+                    description="Wanneer de website veel externe bronnen bevat kan het even duren voordat Recranet wordt ingeladen." />
             </fieldset>
             <fieldset name="advanced">
                 <field

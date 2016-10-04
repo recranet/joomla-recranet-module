@@ -1,26 +1,16 @@
-<div class="recranet-container" data-eq-pts="small: <?php echo $params->get('breakpointSmall'); ?>, medium: <?php echo $params->get('breakpointMedium'); ?>, large: <?php echo $params->get('breakpointLarge'); ?>">
+<?php
+/**
+ * @copyright Recranet B.V. 2016
+ */
+
+defined('_JEXEC') or die;
+
+$initializer = $params->get('enable_initializer', false) ? ' recranet-container-init' : '';
+$action = $params->get('action', false) ? ' action="' . $params->get('action', '') . '"' : '';
+
+?>
+<div class="recranet-container<?php echo $initializer; ?>"<?php echo $initializer; ?> data-eq-pts="small: <?php echo $params->get('breakpointSmall'); ?>, medium: <?php echo $params->get('breakpointMedium'); ?>, large: <?php echo $params->get('breakpointLarge'); ?>">
     <?php
-        echo '<recranet-' . $params->get('view');
-
-        if ($params->get('action')) {
-            echo ' action="' . $params->get('action') . '"';
-        }
-
-        echo '>';
-        echo '</recranet-' . $params->get('view') . '>';
+        echo '<recranet-' . $params->get('view') . $action . '></recranet-' . $params->get('view') . '>';
     ?>
 </div>
-
-<?php if ($params->get('sdk')) : ?>
-    <script type="text/javascript">
-        var recranetConfig = <?php echo json_encode($recranetConfig); ?>;
-
-        (function(d, random) {
-            var l = d.createElement('link'); l.rel = 'stylesheet'; l.type = 'text/css';
-            l.href = 'https://recranet.com/sdk/sdk.css?' + random + '=' + random + '&organization=' + recranetConfig.organization;
-            var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true;
-            s.src = 'https://recranet.com/sdk/sdk.js?' + random + '=' + random;
-            var h = d.getElementsByTagName('head')[0]; h.appendChild(l); h.appendChild(s);
-        })(document, (new Date()).getTime());
-    </script>
-<?php endif; ?>
