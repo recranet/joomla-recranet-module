@@ -2,7 +2,7 @@
 <extension type="module" version="3.1" client="site" method="upgrade">
     <name>Recranet</name>
     <author>Recranet</author>
-    <version>1.3.0</version>
+    <version>1.4.0</version>
     <description>Recranet module voor online boekingen. Heeft u vragen mail dan naar support@recranet.com.</description>
     <files>
         <filename>mod_recranet.xml</filename>
@@ -69,29 +69,45 @@
                     label="Formulieren URL"
                     description="" />
                 <field
-                    name="jquery"
-                    type="checkbox"
-                    default="0"
-                    label="Laad jQuery in"
-                    description="" />
-                <field
                     name="sdk"
-                    type="checkbox"
+                    type="radio"
                     default="1"
                     label="Laad de Recranet SDK"
-                    description="" />
+                    description=""
+                    class="btn-group btn-group-yesno">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field
+                    name="async"
+                    type="radio"
+                    default="1"
+                    label="SDK asynchroon inladen"
+                    description=""
+                    class="btn-group btn-group-yesno">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
                 <field
                     name="html5Mode"
-                    type="checkbox"
+                    type="radio"
                     default="0"
-                    label="HTML5 routing mode (Let op: mod_rewrite regels zijn noodzakelijk)"
-                    description="" />
+                    label="HTML5 routing mode"
+                    description="Let op: mod_rewrite regels zijn noodzakelijk"
+                    class="btn-group btn-group-yesno">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
                 <field
                     name="enable_initializer"
-                    type="checkbox"
-                    default="0"
+                    type="radio"
+                    default="1"
                     label="Toon een laadeffect"
-                    description="Wanneer de website veel externe bronnen bevat kan het even duren voordat Recranet wordt ingeladen." />
+                    description="Wanneer de website veel externe bronnen bevat kan het even duren voordat Recranet wordt ingeladen."
+                    class="btn-group btn-group-yesno">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
             </fieldset>
             <fieldset name="advanced">
                 <field
