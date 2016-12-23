@@ -32,6 +32,7 @@ if ($params->get('sdk')) {
     if ($params->get('async')) {
         // Asynchronously
         $javascript = "" .
+            "<script type=\"text/javascript\">" . PHP_EOL .
             "var recranetConfig = %s;" . PHP_EOL .
 
             "(function(d, random) {" . PHP_EOL .
@@ -40,9 +41,10 @@ if ($params->get('sdk')) {
             "    var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true;" . PHP_EOL .
             "    s.src = 'https://recranet.com/sdk/sdk.js?' + random + '=' + random;" . PHP_EOL .
             "    var h = d.getElementsByTagName('head')[0]; h.appendChild(l); h.appendChild(s);" . PHP_EOL .
-            "})(document, (new Date()).getTime());";
+            "})(document, (new Date()).getTime())" . PHP_EOL .
+            "</script>";
 
-        $document->addScriptDeclaration(sprintf($javascript, json_encode($recranetConfig)));
+        $document->addCustomTag(sprintf($javascript, json_encode($recranetConfig)));
     } else {
         // In sync
         $date = new DateTime();
