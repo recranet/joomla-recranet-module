@@ -14,6 +14,7 @@ $recranetConfig = array(
     'category' => (int) $params->get('category'),
     'html5Mode' => (boolean) $params->get('html5Mode'),
     'locale' => (string) $params->get('locale'),
+    'currency' => (string) $params->get('currency'),
     'accommodation' => (int) $params->get('accommodation'),
     'organization' => (int) $params->get('organization')
 );
