@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" version="3.1" client="site" method="upgrade">
-    <name>Recranet</name>
+    <name>Recranet Online Boeken</name>
     <author>Recranet</author>
-    <version>1.5.0</version>
-    <description>Recranet module voor online boekingen. Heeft u vragen mail dan naar support@recranet.com.</description>
+    <version>1.6.0</version>
+    <description>Recranet Joomla module voor de integratie van Recranet Online Boeken. Heeft u vragen? Mail dan naar support@recranet.com.</description>
     <files>
         <filename>mod_recranet.xml</filename>
         <filename module="mod_recranet">mod_recranet.php</filename>
