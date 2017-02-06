@@ -27,6 +27,15 @@
                     <option value="fr">Français</option>
                 </field>
                 <field
+                    name="currency"
+                    type="list"
+                    default="EUR"
+                    label="Munteenheid"
+                    description="">
+                    <option value="EUR">Euro</option>
+                    <option value="DKK">Deense kroon</option>
+                </field>
+                <field
                     name="view"
                     type="list"
                     default="list"
