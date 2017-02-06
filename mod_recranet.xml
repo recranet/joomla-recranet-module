@@ -24,6 +24,7 @@
                     <option value="nl">Nederlands</option>
                     <option value="de">Deutsch</option>
                     <option value="en">English</option>
+                    <option value="fr">Français</option>
                 </field>
                 <field
                     name="view"
