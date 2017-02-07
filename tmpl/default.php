@@ -8,7 +8,7 @@ defined('_JEXEC') or die;
 $initializer = $params->get('enable_initializer', false) ? ' recranet-container-init' : '';
 $suffix = '';
 
-if ($action = $params->get('action') && !empty($action)) {
+if (!empty($params->get('action', ''))) {
     $suffix = ' action="' . $params->get('action', '') . '"';
 }
 ?>
