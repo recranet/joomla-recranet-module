@@ -38,9 +38,9 @@ if ($params->get('sdk')) {
 
             "(function(d, random) {" . PHP_EOL .
             "    var l = d.createElement('link'); l.rel = 'stylesheet'; l.type = 'text/css';" . PHP_EOL .
-            "    l.href = 'https://recranet.com/sdk/sdk.css?' + random + '=' + random + '&organization=' + recranetConfig.organization;" . PHP_EOL .
+            "    l.href = 'https://app.recranet.com/sdk/sdk.css?' + random + '=' + random + '&organization=' + recranetConfig.organization;" . PHP_EOL .
             "    var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true;" . PHP_EOL .
-            "    s.src = 'https://recranet.com/sdk/sdk.js?' + random + '=' + random;" . PHP_EOL .
+            "    s.src = 'https://app.recranet.com/sdk/sdk.js?' + random + '=' + random;" . PHP_EOL .
             "    var h = d.getElementsByTagName('head')[0]; h.appendChild(l); h.appendChild(s);" . PHP_EOL .
             "})(document, (new Date()).getTime())" . PHP_EOL .
             "</script>";
