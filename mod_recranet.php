@@ -56,10 +56,10 @@ if ($params->get('sdk')) {
             "<script type='text/javascript'>" . PHP_EOL .
             "   var recranetConfig = %s;" . PHP_EOL .
             "</script>" . PHP_EOL .
-            "<script src='https://recranet.com/sdk/sdk.js?%s' type='text/javascript'></script>";
+            "<script src='https://app.recranet.com/sdk/sdk.js?%s' type='text/javascript'></script>";
 
         $document->addCustomTag(vsprintf($scriptHtml, [json_encode($recranetConfig), $randomString]));
-        $document->addStylesheet('https://recranet.com/sdk/sdk.css?' . $randomString . $organizationString);
+        $document->addStylesheet('https://app.recranet.com/sdk/sdk.css?' . $randomString . $organizationString);
     }
 }
 
