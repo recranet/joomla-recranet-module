@@ -111,6 +111,16 @@
                     <option value="0">JNO</option>
                 </field>
                 <field
+                    name="disableFancybox"
+                    type="radio"
+                    default="0"
+                    label="Fancybox uitschakelen"
+                    description="Fancybox uitschakelen in Recranet SDK"
+                    class="btn-group btn-group-yesno">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field
                     name="enable_initializer"
                     type="radio"
                     default="1"

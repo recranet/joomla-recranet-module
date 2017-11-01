@@ -13,6 +13,7 @@ $recranetConfig = array(
     'accommodationsView' => (string) $params->get('accommodationsView'),
     'category' => (int) $params->get('category'),
     'html5Mode' => (boolean) $params->get('html5Mode'),
+    'disableFancybox' => (boolean) $params->get('disableFancybox'),
     'locale' => (string) $params->get('locale'),
     'currency' => (string) $params->get('currency'),
     'accommodation' => (int) $params->get('accommodation'),
