@@ -17,7 +17,8 @@ $recranetConfig = array(
     'locale' => (string) $params->get('locale'),
     'currency' => (string) $params->get('currency'),
     'accommodation' => (int) $params->get('accommodation'),
-    'organization' => (int) $params->get('organization')
+    'organization' => (int) $params->get('organization'),
+    'featured' => (boolean) $params->get('featured')
 );
 
 $document = JFactory::getDocument();
