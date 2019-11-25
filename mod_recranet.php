@@ -18,6 +18,7 @@ $recranetConfig = array(
     'currency' => (string) $params->get('currency'),
     'accommodation' => (int) $params->get('accommodation'),
     'organization' => (int) $params->get('organization'),
+    'reference' => (string) $params->get('reference'),
     'featured' => (boolean) $params->get('featured')
 );
 

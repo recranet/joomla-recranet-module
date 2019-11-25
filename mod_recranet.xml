@@ -64,6 +64,12 @@
                     label="Organisatie ID"
                     description="" />
                 <field
+                    name="reference"
+                    type="text"
+                    default=""
+                    label="Referentie"
+                    description="" />
+                <field
                     name="category"
                     type="number"
                     default=""
